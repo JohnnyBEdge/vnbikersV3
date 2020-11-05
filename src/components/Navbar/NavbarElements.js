@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-// import {Link} from 'react-router-dom';
+import {Link as LinkR} from 'react-router-dom';
 import {Link as LinkS} from 'react-scroll';
 
 export const Nav = styled.nav`
@@ -46,6 +46,7 @@ export const MobileIcon = styled.div`
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
+        color: #fff;
     }
 `
 export const NavMenu = styled.ul`
@@ -70,8 +71,46 @@ export const NavLink = styled(LinkS)`
     height: 100%;
     padding: 0 1rem;
     cursor: pointer;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2rem;
 
     &.active{
         border-bottom: 3px solid #01bf71;
+        font-size: 2.2rem;
     }
+    &:hover{
+        color: #01bf71;
+        font-size: 2.2rem;
+    }
+`
+export const ContactBtn = styled.nav`
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 768px){
+        display: none;
+    }
+`
+export const ContactBtnLink = styled(LinkR)`
+    border-radius: 50px;
+    background-color: #01bf71;
+    //	Sequences of whitespace will collapse into a single whitespace. Text will never wrap to the next line. The text continues on the same line until a <br> tag is encountered
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #010606;
+    font-size: 1rem;
+    font-family: 'Permanent Marker', cursive;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+
+    &:hover{
+        transition: all 0.2s ease-in-out;
+        background: #fff;
+        color: #010606;
+        font-size: 1.2rem;
+    }
+
 `

@@ -7,17 +7,19 @@ import {
     MobileIcon,
     NavMenu,
     NavItem,
-    NavLink
+    NavLink,
+    ContactBtn,
+    ContactBtnLink
 } from './NavbarElements';
 import logo from '../../assets/images/logo.png'
 
-const Navbar = () => {
+const Navbar = (props) => {
     return (
         <>
             <Nav>
                 <NavbarContainer>
                     <NavLogo src={logo} />
-                    <MobileIcon>
+                    <MobileIcon onClick={props.toggleIsOpen}>
                         <FaBars/>
                     </MobileIcon>
                     <NavMenu>
@@ -25,12 +27,15 @@ const Navbar = () => {
                             <NavLink to='about'>About</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink to="gallery">Gallery</NavLink>
+                            <NavLink to="gallery">Services</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink to="contact">Contact</NavLink>
+                            <NavLink to="contact">Gallery</NavLink>
                         </NavItem>
                     </NavMenu>
+                    <ContactBtn>
+                        <ContactBtnLink to="/contact">Contact</ContactBtnLink>
+                    </ContactBtn>
                 </NavbarContainer>
             </Nav>
         </>
