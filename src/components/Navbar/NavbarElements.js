@@ -38,6 +38,10 @@ export const NavLogo = styled.img`
 export const MobileIcon = styled.div`
     display: none;
 
+    &:hover{
+        color: rgb(14, 214, 14);
+    }
+
     @media screen and (max-width: 768px){
         display: block;
         position: absolute;
@@ -79,7 +83,7 @@ export const NavLink = styled(LinkS)`
         font-size: 2.2rem;
     }
     &:hover{
-        color: #01bf71;
+        color: rgb(14, 214, 14);
         font-size: 2.2rem;
     }
 `
@@ -93,7 +97,7 @@ export const ContactBtn = styled.nav`
 `
 export const ContactBtnLink = styled(LinkR)`
     border-radius: 50px;
-    background-color: #01bf71;
+    background-color: rgb(14, 214, 14);
     //	Sequences of whitespace will collapse into a single whitespace. Text will never wrap to the next line. The text continues on the same line until a <br> tag is encountered
     white-space: nowrap;
     padding: 10px 22px;

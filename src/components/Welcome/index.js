@@ -3,14 +3,18 @@ import video from '../../assets/video/traffic.mp4'
 import {
     WelcomeContainer,
     VideoContainer,
-    Video
+    Video,
+    TitleOverlay,
+    SubTitleOverlay
 } from './WelcomeElements';
 
 const Welcome = () => {
     return (
         <WelcomeContainer>
+            <TitleOverlay>VN Bikers</TitleOverlay>
+            <SubTitleOverlay>Custom . Quality . Reliable</SubTitleOverlay>
             <VideoContainer>
-                <Video autoplay loop muted src={video} type="video/mp4" />
+                <Video muted autoPlay loop src={video} type="video/mp4" />
             </VideoContainer>
         </WelcomeContainer>
     )

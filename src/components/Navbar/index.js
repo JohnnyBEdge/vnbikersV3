@@ -34,7 +34,7 @@ const Navbar = (props) => {
                         </NavItem>
                     </NavMenu>
                     <ContactBtn>
-                        <ContactBtnLink to="/contact">Contact</ContactBtnLink>
+                        <ContactBtnLink to="/contact">Contact Us</ContactBtnLink>
                     </ContactBtn>
                 </NavbarContainer>
             </Nav>
