@@ -3,22 +3,30 @@ import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 import Welcome from '../components/Welcome';
 import InfoSection from '../components/InfoSection';
-import { homeSecOne } from '../components/InfoSection/data';
+import { homeSecOne, homeSecTwo } from '../components/InfoSection/data';
+import Modal from '../components/Modal';
 
 const Home = () => {
     
     const [isOpen, setIsOpen] = useState(false);
+    const [modalOpen, setModalOpen] = useState(false);
 
-    const toggleIsOpen = () => {
+    const toggleSidebar = () => {
         setIsOpen(!isOpen)
+    };
+    const toggleModal = () => {
+        setModalOpen(!modalOpen);
+        console.log("modal open:", modalOpen)
     };
 
     return (
         <>
-            <Sidebar isOpen={isOpen} toggleIsOpen={toggleIsOpen} />
-            <Navbar toggleIsOpen={toggleIsOpen} />
+            <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
+            <Navbar toggleSidebar={toggleSidebar} />
             <Welcome/>
             <InfoSection {...homeSecOne} />
+            <InfoSection {...homeSecTwo} modalOpen={modalOpen} toggleModal={toggleModal}/>
+            <Modal modalOpen={modalOpen} toggleModal={toggleModal} />
         </>
     )
 }

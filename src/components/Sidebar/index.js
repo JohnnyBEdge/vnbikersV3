@@ -12,32 +12,32 @@ import {
 
 const Sidebar = (props) => {
     return (
-        <SidebarContainer isOpen={props.isOpen} onClick={props.toggleIsOpen}>
-            <Icon onClick={props.toggleIsOpen}>
+        <SidebarContainer isOpen={props.isOpen} onClick={props.toggleSidebar}>
+            <Icon onClick={props.toggleSidebar}>
                 <CloseIcon/>
             </Icon>
             <SidebarMenuWrapper>
                 <SidebarMenu>
                     <SidebarMenuItem 
                         to="about"
-                        onClick={props.toggleIsOpen}>
+                        onClick={props.toggleSidebar}>
                             About
                     </SidebarMenuItem>
                     <SidebarMenuItem 
                         to="services"
-                        onClick={props.toggleIsOpen}>
+                        onClick={props.toggleAside}>
                             Services
                     </SidebarMenuItem>
                     <SidebarMenuItem 
                         to="gallery"
-                        onClick={props.toggleIsOpen}>
+                        onClick={props.toggleSidebar}>
                             Gallery
                     </SidebarMenuItem>
                 </SidebarMenu>
                 <SidebarBtnWrapper>
                     <SidebarBtn 
                         to="/contact"
-                        onClick={props.toggleIsOpen}>
+                        onClick={props.toggleSidebar}>
                             Contact
                     </SidebarBtn>
                 </SidebarBtnWrapper>

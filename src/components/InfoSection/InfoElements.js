@@ -73,7 +73,30 @@ export const Subtitle = styled.p`
     color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
     font-family: 'Indie Flower', cursive;
 `
+export const BtnWrap = styled.div`
+    display: ${({displayBtn}) => (displayBtn ? 'flex' : 'none')};
+    justify-content: center;
+`
+export const ModalBtn = styled.button`
+    display: ${({displayBtn}) => (displayBtn ? 'flex' : 'none')};
+    align-items: center;
+    border-radius: 50px;
+    background-color: rgb(14, 214, 14);
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #010606;
+    font-size: 1rem;
+    font-family: 'Permanent Marker', cursive;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
 
+    @media screen and (max-width: 768px){
+        display: none;
+    }
+`
 export const ImgWrap = styled.div`
     max-width: 555px;
     height: 100%;

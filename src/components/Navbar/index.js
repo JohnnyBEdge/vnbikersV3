@@ -19,7 +19,7 @@ const Navbar = (props) => {
             <Nav>
                 <NavbarContainer>
                     <NavLogo src={logo} />
-                    <MobileIcon onClick={props.toggleIsOpen}>
+                    <MobileIcon onClick={props.toggleSidebar}>
                         <FaBars/>
                     </MobileIcon>
                     <NavMenu>
@@ -27,10 +27,10 @@ const Navbar = (props) => {
                             <NavLink to='about'>About</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink to="gallery">Services</NavLink>
+                            <NavLink to="services">Services</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink to="contact">Gallery</NavLink>
+                            <NavLink to="gallery">Gallery</NavLink>
                         </NavItem>
                     </NavMenu>
                     <ContactBtn>
