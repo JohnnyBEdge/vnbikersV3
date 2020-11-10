@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import {FaBars} from 'react-icons/fa'
+import {FaBars} from 'react-icons/fa';
+import {animateScroll as scroll} from 'react-scroll';
 import {
     Nav,
     NavbarContainer,
@@ -15,6 +16,7 @@ import logo from '../../assets/images/logo.png'
 
 const Navbar = (props) => {
 
+
     const [scrollNav, setScrollNav] = useState(false);
     const changeNav = () => {
         if(window.scrollY >= 80){
@@ -22,7 +24,11 @@ const Navbar = (props) => {
         } else {
             setScrollNav(false);
         }
+    };
+    const scrollHome = () => {
+        scroll.scrollToTop();
     }
+
     useEffect(() => {
         window.addEventListener('scroll', changeNav)
     }, [])
@@ -31,19 +37,41 @@ const Navbar = (props) => {
         <>
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
-                    <NavLogo src={logo} />
+                    <NavLogo src={logo} onClick={scrollHome}/>
                     <MobileIcon onClick={props.toggleSidebar}>
                         <FaBars/>
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLink to='about'>About</NavLink>
+                            <NavLink 
+                                to='about'
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact='true'
+                                offset={-80}
+                                // activeClass="active"
+                            >About</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink to="services">Services</NavLink>
+                            <NavLink 
+                                to="services"
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact='true'
+                                offset={-80}
+                            >Services</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink to="gallery">Gallery</NavLink>
+                            <NavLink 
+                                to="gallery"
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact='true'
+                                offset={-80}    
+                            >Gallery</NavLink>
                         </NavItem>
                     </NavMenu>
                     <ContactBtn>

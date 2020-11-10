@@ -6,6 +6,7 @@ import Gallery from '../components/Gallery'
 import InfoSection from '../components/InfoSection';
 import { homeSecOne, homeSecTwo } from '../components/InfoSection/data';
 import Modal from '../components/Modal';
+import Services from '../components/Services';
 
 const Home = () => {
     
@@ -26,7 +27,8 @@ const Home = () => {
             <Navbar toggleSidebar={toggleSidebar} />
             <Welcome/>
             <InfoSection {...homeSecOne} />
-            <InfoSection {...homeSecTwo} modalOpen={modalOpen} toggleModal={toggleModal}/>
+            {/* <InfoSection {...homeSecTwo} modalOpen={modalOpen} toggleModal={toggleModal}/> */}
+            <Services/>
             <Modal modalOpen={modalOpen} toggleModal={toggleModal} />
             <Gallery/>
         </>
