@@ -72,4 +72,5 @@ export const SendMessageBtn = styled.button`
     outline: none;
     border: none;
     cursor: pointer;
+
 `

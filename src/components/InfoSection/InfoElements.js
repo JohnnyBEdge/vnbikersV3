@@ -96,6 +96,12 @@ export const ModalBtn = styled.button`
     @media screen and (max-width: 768px){
         display: none;
     }
+    &:hover{
+        transition: all 0.2s ease-in-out;
+        background: #fff;
+        color: #010606;
+        font-size: 1.2rem;
+    }
 `
 export const ImgWrap = styled.div`
     max-width: 555px;

@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 import Welcome from '../components/Welcome';
+import Gallery from '../components/Gallery'
 import InfoSection from '../components/InfoSection';
 import { homeSecOne, homeSecTwo } from '../components/InfoSection/data';
 import Modal from '../components/Modal';
@@ -27,6 +28,7 @@ const Home = () => {
             <InfoSection {...homeSecOne} />
             <InfoSection {...homeSecTwo} modalOpen={modalOpen} toggleModal={toggleModal}/>
             <Modal modalOpen={modalOpen} toggleModal={toggleModal} />
+            <Gallery/>
         </>
     )
 }
