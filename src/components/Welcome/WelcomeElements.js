@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const WelcomeContainer = styled.div`
     background: #0c0c0c;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     padding: 0 30px;
     /* height: 800px; */
@@ -55,6 +54,7 @@ export const TitleOverlay = styled.h1`
     z-index: 2;
     color: #fff;
     opacity: .3;
+    margin-top: 100px;
 `
 export const SubTitleOverlay = styled.p`
     font-family: 'Indie Flower', cursive;
