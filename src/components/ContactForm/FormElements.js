@@ -11,9 +11,12 @@ export const FormContainer = styled.form`
     background-color: whitesmoke;
     z-index: 990;
     border-radius: 10px;
-
-    @media screen and (max-width: 480px){
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    @media screen and (max-width: 768px){
         width: 98%;
+        top: 5%;
     }
 `
 export const Input = styled.input`

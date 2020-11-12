@@ -8,10 +8,9 @@ const Modal = ({toggleModal, modalOpen}) => {
         <>
             <Overlay modalOpen = {modalOpen} onClick={()=> toggleModal()}>
 
-            {modalOpen ? <ContactForm/> : null}
             </Overlay>
                 
-            
+            {modalOpen ? <ContactForm/> : null}
             
         </>
     )
