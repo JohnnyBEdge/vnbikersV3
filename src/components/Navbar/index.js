@@ -50,7 +50,6 @@ const Navbar = (props) => {
                                 spy={true}
                                 exact='true'
                                 offset={-80}
-                                // activeClass="active"
                             >About</NavLink>
                         </NavItem>
                         <NavItem>

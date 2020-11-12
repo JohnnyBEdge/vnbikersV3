@@ -3,15 +3,17 @@ import styled from "styled-components";
 export const InfoContainer = styled.div`
     color: #fff;
     background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
+    height: 100vh;
 
     @media screen and (max-width: 768px){
         padding: 100px 0;
+        height: 100%;
     }
 `
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 860px;
+    /* height: 100%; */
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
@@ -26,7 +28,7 @@ export const InfoRow = styled.div`
 
     @media screen and (max-width: 768px){
         //
-        grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'`: `'col1 col1' 'col1 col2'`)};
+        grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col1'`: `'col1 col1' 'col2 col2'`)};
     }
 `
 export const Col1 = styled.div`

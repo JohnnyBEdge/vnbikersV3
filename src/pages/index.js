@@ -4,9 +4,10 @@ import Navbar from '../components/Navbar';
 import Welcome from '../components/Welcome';
 import Gallery from '../components/Gallery'
 import InfoSection from '../components/InfoSection';
-import { homeSecOne, homeSecTwo } from '../components/InfoSection/data';
+import { homeSecOne } from '../components/InfoSection/data';
 import Modal from '../components/Modal';
 import Services from '../components/Services';
+import Footer from '../components/Footer';
 
 const Home = () => {
     
@@ -31,6 +32,7 @@ const Home = () => {
             <Services/>
             <Modal modalOpen={modalOpen} toggleModal={toggleModal} />
             <Gallery/>
+            <Footer />
         </>
     )
 }

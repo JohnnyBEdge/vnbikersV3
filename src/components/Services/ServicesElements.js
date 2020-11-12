@@ -3,17 +3,11 @@ import styled from 'styled-components';
 export const ServicesContainer = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    height: 800px;
+    padding-bottom: 50px;
     background-color: #010606;
-
-    @media screen and (max-width: 768px){
-       height: 1100px; 
-    }
-    @media screen and (max-width: 80px){
-       height: 1300px; 
-    }
+    height: auto;
 `
 export const SectionTitle = styled.h2`
     font-family: 'Permanent Marker', cursive;
@@ -22,7 +16,6 @@ export const SectionTitle = styled.h2`
     color: whitesmoke;
 
     @media screen and (max-width: 480px){
-       height: 1100px; 
        margin-bottom: 30px;
     }
 `
@@ -34,6 +27,7 @@ export const ServicesWrapper = styled.div`
     align-items: center;
     grid-gap: 16px;
     padding: 0 50px;
+
     @media screen and (max-width: 1000px){
         grid-template-columns: 1fr 1fr;
     }
@@ -46,6 +40,7 @@ export const ServicesCard = styled.div`
     display: flex;
     background: whitesmoke;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
     height: 380px;

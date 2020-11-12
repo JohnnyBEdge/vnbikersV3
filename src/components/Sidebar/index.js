@@ -20,16 +20,19 @@ const Sidebar = (props) => {
                 <SidebarMenu>
                     <SidebarMenuItem 
                         to="about"
+                        offset={-80}
                         onClick={props.toggleSidebar}>
                             About
                     </SidebarMenuItem>
                     <SidebarMenuItem 
                         to="services"
-                        onClick={props.toggleAside}>
+                        offset={-80}
+                        onClick={props.toggleSidebar}>
                             Services
                     </SidebarMenuItem>
                     <SidebarMenuItem 
                         to="gallery"
+                        offset={-80}
                         onClick={props.toggleSidebar}>
                             Gallery
                     </SidebarMenuItem>

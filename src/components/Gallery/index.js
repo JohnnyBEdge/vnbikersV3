@@ -14,9 +14,9 @@ import img9 from '../../assets/images/bike9.jpg';
 const Gallery = () => {
     return (
         <>
-            <GalleryContainer>
+            <GalleryContainer id="gallery">
                 <SectionTitle>Gallery</SectionTitle>
-                <GridContainer id="gallery">
+                <GridContainer >
                     <ImgContainer>
                         <Image src={img1}/>
                     </ImgContainer>
