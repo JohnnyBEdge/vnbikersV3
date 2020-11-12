@@ -3,7 +3,7 @@ import {
     FooterLinksContainer, FooterWrap, FooterContainer, 
     SectionTitle, FooterLink, Signature, ContactBtn } from './FooterElements'
 
-const Footer = () => {
+const Footer = (props) => {
     return (
         <FooterContainer>
             <FooterWrap>
@@ -30,13 +30,13 @@ const Footer = () => {
                         spy={true}
                         exact='true'
                         offset={-80}>Gallery</FooterLink>
-                    <ContactBtn>Contact Us</ContactBtn>
+                    <ContactBtn onClick={props.toggleModal}>Contact Us</ContactBtn>
                 </FooterLinksContainer>
                 <FooterLinksContainer>
                     <SectionTitle>Social Media</SectionTitle>
-                    {/* <FooterLink  to="/">Facebook</FooterLink>
+                    <FooterLink  to="/">Facebook</FooterLink>
                     <FooterLink to="/">InstaGram</FooterLink>
-                    <FooterLink to="/">The New Hanoian</FooterLink> */}
+                    <FooterLink to="/">The New Hanoian</FooterLink>
                 </FooterLinksContainer>
             </FooterWrap>
             <Signature>VN Bikers &#xA9; 2020</Signature>

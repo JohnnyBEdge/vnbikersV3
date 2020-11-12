@@ -12,11 +12,13 @@ export const Overlay = styled.div`
     justify-content: center;
     background-color: rgba(0,0,0,0.8);
 `
-export const ModalContent = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-    height: 700px;
-    background-color: white;
-`
+// export const ModalContent = styled.div`
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin: 0 auto;
+//     /* max-width: 400px; */
+//     width: 400px;
+//     height: 700px;
+//     background-color: white;
+// `

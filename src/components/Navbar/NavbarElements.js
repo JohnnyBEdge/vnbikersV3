@@ -87,15 +87,7 @@ export const NavLink = styled(LinkS)`
         font-size: 2.2rem;
     }
 `
-export const ContactBtn = styled.nav`
-    display: flex;
-    align-items: center;
-
-    @media screen and (max-width: 768px){
-        display: none;
-    }
-`
-export const ContactBtnLink = styled(LinkR)`
+export const ContactBtn = styled.button`
     border-radius: 50px;
     background-color: rgb(14, 214, 14);
     //	Sequences of whitespace will collapse into a single whitespace. Text will never wrap to the next line. The text continues on the same line until a <br> tag is encountered
@@ -109,12 +101,16 @@ export const ContactBtnLink = styled(LinkR)`
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
+    height: 40px;
+    margin-top: 20px;
 
     &:hover{
         transition: all 0.2s ease-in-out;
         background: #fff;
         color: #010606;
-        font-size: 1.2rem;
     }
 
+    @media screen and (max-width: 768px){
+        display: none;
+    }
 `

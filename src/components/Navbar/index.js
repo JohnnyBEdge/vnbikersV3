@@ -73,9 +73,7 @@ const Navbar = (props) => {
                             >Gallery</NavLink>
                         </NavItem>
                     </NavMenu>
-                    <ContactBtn>
-                        <ContactBtnLink to="/contact">Contact Us</ContactBtnLink>
-                    </ContactBtn>
+                    <ContactBtn onClick={props.toggleModal}>Contact Us</ContactBtn>
                 </NavbarContainer>
             </Nav>
         </>

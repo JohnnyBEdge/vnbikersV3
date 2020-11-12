@@ -67,7 +67,7 @@ export const SidebarBtnWrapper = styled.div`
     display: flex;
     justify-content: center;
 `
-export const SidebarBtn = styled(LinkR)`
+export const SidebarBtn = styled.button`
     font-family: 'Permanent Marker', cursive;
     font-size: 1rem;
     color: #010606;

@@ -39,8 +39,10 @@ const Sidebar = (props) => {
                 </SidebarMenu>
                 <SidebarBtnWrapper>
                     <SidebarBtn 
-                        to="/contact"
-                        onClick={props.toggleSidebar}>
+                        onClick={() => {
+                            props.toggleSidebar();
+                            props.toggleModal();
+                        }}>
                             Contact
                     </SidebarBtn>
                 </SidebarBtnWrapper>

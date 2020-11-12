@@ -10,9 +10,11 @@ export const FormContainer = styled.form`
     height: auto;
     background-color: whitesmoke;
     z-index: 990;
-    top: 10%;
-    left: 25%;
     border-radius: 10px;
+
+    @media screen and (max-width: 480px){
+        width: 98%;
+    }
 `
 export const Input = styled.input`
     width: 90%;
@@ -45,6 +47,10 @@ export const TextAreaInput = styled.textarea`
   &:focus {
         background-color: lightgray;
         outline: none;
+    }
+
+    @media screen and (max-width: 480px){
+        min-width: 350px;
     }
 `
 export const FormTitle = styled.h2`

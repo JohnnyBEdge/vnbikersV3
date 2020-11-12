@@ -6,9 +6,12 @@ const Modal = ({toggleModal, modalOpen}) => {
 
     return (
         <>
-            <Overlay modalOpen = {modalOpen} onClick={()=> toggleModal()}></Overlay>
-                
+            <Overlay modalOpen = {modalOpen} onClick={()=> toggleModal()}>
+
             {modalOpen ? <ContactForm/> : null}
+            </Overlay>
+                
+            
             
         </>
     )

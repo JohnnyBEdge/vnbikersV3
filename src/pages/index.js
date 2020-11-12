@@ -24,15 +24,15 @@ const Home = () => {
 
     return (
         <>
-            <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
-            <Navbar toggleSidebar={toggleSidebar} />
+            <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} toggleModal={toggleModal}/>
+            <Navbar toggleSidebar={toggleSidebar} toggleModal={toggleModal} />
             <Welcome/>
             <InfoSection {...homeSecOne} />
             {/* <InfoSection {...homeSecTwo} modalOpen={modalOpen} toggleModal={toggleModal}/> */}
             <Services/>
             <Modal modalOpen={modalOpen} toggleModal={toggleModal} />
             <Gallery/>
-            <Footer />
+            <Footer toggleModal={toggleModal}/>
         </>
     )
 }
