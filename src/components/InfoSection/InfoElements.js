@@ -13,7 +13,6 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    /* height: 100%; */
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
@@ -44,7 +43,7 @@ export const Col2 = styled.div`
 export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
-    padding-bottom: 60px;
+    padding-bottom: 10px;
 `
 export const TopLine = styled.p`
     color: #01bf71;
@@ -58,7 +57,7 @@ export const TopLine = styled.p`
 export const SectionHeading = styled.h2`
     font-family: 'Permanent Marker', cursive;
     margin-bottom: 24px;
-    font-size: 48px;
+    font-size: 4rem;
     line-height: 1.1;
     font-weight: 600;
     color: ${({lightText}) => (lightText ? '#f7f8fa' : '#010606')};
@@ -108,9 +107,18 @@ export const ModalBtn = styled.button`
 export const ImgWrap = styled.div`
     max-width: 555px;
     height: 100%;
+
+    @media screen and (max-width: 768px){
+        max-width: 100%;
+    }
 `
 export const Img = styled.img`
     width: 80%;
     margin: 0 0 10px 30px;
     padding-right: 0;
+
+    @media screen and (max-width: 768px){
+        width: 100%;
+        margin: 0 auto;
+    }
 `

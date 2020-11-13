@@ -14,6 +14,7 @@ import {
     ImgWrap,
     Img
 } from './InfoElements';
+import DandJ from '../../assets/images/hanoi_buds.png';
 
 
 const InfoSection = ({id, lightBg, imgStart, topLine, lightText, headline, darkText, desc, img, alt, displayBtn, toggleModal}) => {
@@ -34,7 +35,7 @@ const InfoSection = ({id, lightBg, imgStart, topLine, lightText, headline, darkT
                         </Col1>
                         <Col2>
                             <ImgWrap>
-                                <Img src={img} alt={alt} />
+                                <Img src={DandJ} alt={alt} />
                             </ImgWrap>
                         </Col2>
                     </InfoRow>
