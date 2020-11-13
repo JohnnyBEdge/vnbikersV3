@@ -2,23 +2,8 @@ import React, {useState} from 'react';
 import {FormContainer, Input, TextAreaInput, FormSubTitle, FormTitle, SendMessageBtn} from './FormElements';
 
 const FormElements = () => {
-    const [fName, setFName] = useState('');
-    const [lName, setLName] = useState('');
-    const [email, setEmail] = useState('');
-    const [mess, setMess] = useState('');
-    const [messDate, setMessDate] = useState(new Date());
-    const [status, setStatus] = useState('')
-
-    const formData = {
-        fname: fName,
-        lName: lName,
-        email: email,
-        mess: mess,
-        date: messDate
-    };
 
     const handleForm = (event) => {
-        // event.preventDefault();
         const form = event.target;
         const data = new FormData(form);
         const xhr = new XMLHttpRequest();
