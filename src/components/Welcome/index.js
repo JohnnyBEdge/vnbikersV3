@@ -1,5 +1,5 @@
 import React from 'react';
-import video from '../../assets/video/traffic.mp4'
+import video from '../../assets/video/traffic.webm'
 import {
     WelcomeContainer,
     VideoContainer,
