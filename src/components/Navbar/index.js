@@ -9,8 +9,7 @@ import {
     NavMenu,
     NavItem,
     NavLink,
-    ContactBtn,
-    ContactBtnLink
+    ContactBtn
 } from './NavbarElements';
 import logo from '../../assets/images/logo.png'
 

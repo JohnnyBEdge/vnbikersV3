@@ -1,5 +1,5 @@
 import React from 'react';
-import {Overlay, ModalContent} from './ModalElements';
+import {Overlay} from './ModalElements';
 import ContactForm from '../ContactForm'
 
 const Modal = ({toggleModal, modalOpen}) => {

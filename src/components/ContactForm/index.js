@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {FormContainer, Input, TextAreaInput, FormSubTitle, FormTitle, SendMessageBtn} from './FormElements';
 
 const FormElements = () => {
@@ -12,7 +12,7 @@ const FormElements = () => {
         xhr.onreadystatechange = () => {
             if(xhr.readyState !== XMLHttpRequest.DONE) return;
             if(xhr.status === 200) {
-                form. reset();
+                form.reset();
             }
         }
         xhr.send(data);
