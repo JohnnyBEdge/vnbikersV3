@@ -14,7 +14,7 @@ const Welcome = () => {
             <TitleOverlay>VN Bikers</TitleOverlay>
             <SubTitleOverlay>Custom . Quality . Reliable</SubTitleOverlay>
             <VideoContainer>
-                <Video muted autoPlay playsinline loop src={video} type="video/mp4" />
+                <Video muted autoPlay playsinline loop src={video} type="video/webm" />
             </VideoContainer>
         </WelcomeContainer>
     )
